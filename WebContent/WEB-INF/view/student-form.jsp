@@ -10,11 +10,19 @@
 			First name: <form:input path="firstName"/>
 			<br>
 			Last name: <form:input path="lastName"/>
+			
 			<br><br>
+			
 			Country:
 			<form:select path="country">			
 				<form:options items="${countryOptions}"/>
 			</form:select>
+			
+			<br><br>
+			
+			Favorite programming language:
+			Java <form:radiobutton path="favoriteLanguage" value="Java"/>
+			C++ <form:radiobutton path="favoriteLanguage" value="CPP"/>
 			
 			<br><br>
 			<input type="submit" value="Submit"/>
