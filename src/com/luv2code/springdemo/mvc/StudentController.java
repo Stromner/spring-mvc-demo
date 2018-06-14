@@ -20,6 +20,7 @@ public class StudentController {
 			@ModelAttribute("student") Student student) {
 		System.out.println("Student firstName: " + student.getFirstName() +
 				" lastName: " + student.getLastName());
+		System.out.println("From country: " + student.getCountry());
 		return "student-confirmation";
 	}
 }
